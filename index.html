@@ -207,9 +207,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     // console.log('Move out now...');
   }
 
-  $(function() { 
-    $('#my-pic').hover(deepFeature, shallowFeature);
-  })
+  //$(function() { 
+  //  $('#my-pic').hover(deepFeature, shallowFeature);
+  //})
 
 </script>
 
@@ -221,7 +221,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     Biography 
   </h1>
   <div class="bio-body" style="overflow:hidden;">
-    <p> <strong>Fan-Yun Sun</strong> is a student majoring in Computer Science and Information Engineering at <a href='http://www.ntu.edu.tw/'>NTU</a>. He is also a student researcher at Machine Discovery and Social Network Mining Laboratory (advised by <a href='https://www.csie.ntu.edu.tw/~sdlin/'> Prof. Shou-De Lin</a>) and Multimedia indexing, Retrieval, and Analysis Lab (advised by <a href='https://winstonhsu.info/'>Prof. Winston Hsu</a>). Currently, he is a research intern at <a href='https://mila.quebec/en/mila/'>MILA</a> and is supervised by <a href='https://jian-tang.com/'>Prof. Jian Tang</a>. His research interests include (multi-agent) reinforcement learning and graph representation learning.
+    <p> <strong>Fan-Yun Sun</strong> is a student majoring in Computer Science and Information Engineering at <a href='http://www.ntu.edu.tw/'>NTU</a>. He is also a student researcher at Machine Discovery and Social Network Mining Laboratory (advised by <a href='https://www.csie.ntu.edu.tw/~sdlin/'> Prof. Shou-De Lin</a>) and Multimedia indexing, Retrieval, and Analysis Lab (advised by <a href='https://winstonhsu.info/'>Prof. Winston Hsu</a>). He has been a research intern at <a href='https://mila.quebec/en/mila/'>MILA</a> and is supervised by <a href='https://jian-tang.com/'>Prof. Jian Tang</a>. His research interests include (multi-agent) reinforcement learning and graph representation learning.
 
     <div style="width: 50%; float:left">
 
@@ -234,7 +234,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           <li>Machine Learning / Deep Learning</li>
           <li>ML on graphs / Drug Discovery</li>
-          <li>Reinforcement Learning</li>
+          <li>Multiagent System / Reinforcement Learning</li>
           <li>Computer System</li>
           
         </ul>
@@ -265,10 +265,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div class="timeline-item">
       <div class="timeline-date">
         <img class="social-icon" src="/images/icon/mila.png"/>
-        2019 Jan. -
+        2019 Jan. - 2019 May.
       </div>
       <div class="timeline-title">
-	Research Intern @ MILA
+	      Research Intern @ MILA
       </div>
       <div class="timeline-desc">
       </div>
@@ -322,7 +322,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	Microsoft Student Partner @ Microsoft
       </div>
       <div class="timeline-desc">
-        MSP of the year. Workshop lecturer on <br> <a class="tag" href="https://drive.google.com/open?id=1_iNpKCmdl5IeDv-nawgr20-m7y5aNq_1BQz-p1kAPZo"> <strong>Intro to deep learning and frameworks compared</strong> </a>
+        MSP of the year. Workshop lecturer.
       </div>
     </div>
     
@@ -373,7 +373,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         Computer Science department (GPA: 4.2/4.3, Top 3%) <br>
         Machine Discovery and Social Network Mining Laboratory & Multimedia indexing, Retrieval, and Analysis Lab<br>
         Primary focus: <br>
-        - Reinforcement learning <br>
+        - (Multiagent) Reinforcement learning <br>
         - Graph representation Learning <br>
         - Time series prediction <br>
         - Instance Segmentation on medical image <br>
@@ -403,7 +403,184 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     Publications
   </h1>
 
-		<!-- Publications -->
+  <div class="pub-list">
+
+    <div class="pub">
+      <div class="pub-left">
+        <img class="intro-img frame" src="/publications/vgraph.png">
+      </div>
+
+      <div class="pub-right">
+        <div class="title">
+          vGraph: A Generative Model for Joint Community Detection and Node Representation Learning
+        </div>
+        <div class="desc">
+          In current literature, community detection and node representation learning are usually independently studied while they are actually highly correlated. We propose a probabilistic generative model called vGraph to learn community membership and node representation collaboratively.
+        </div>
+        <div class="authors">
+          <a class="author" href="fanyun-sun.github.io"> <strong>Fan-Yun Sun</strong></a>,
+          <a class="author" href="https://mnqu.github.io/">Meng Qu</a>,
+          <a class="author" href="https://jhoffmann.org/">Jordan Hoffman</a>,
+          <a class="author" href="https://chinweihuang.com/">Chin-Wei Huang</a>,
+          <a class="author" href="https://jian-tang.com/">Jian Tang</a>
+
+        </div>
+        <div class="publish">
+          <span class="publisher">In submission of NeurIPS 2019</span>
+        </div>
+      </div>
+    </div>
+    <div class="pub">
+      <div class="pub-left">
+        <img class="intro-img frame" src="/publications/regulation.png">
+      </div>
+
+      <div class="pub-right">
+        <div class="title">
+          A Regulation Enforcement Solution for Multi-agent Reinforcement Learning
+        </div>
+        <div class="desc">
+          In this paper, we aim to answer the  following  question: In a decentralized environment (no centralized authority can control agents), given that not all agents are compliant to regulations at first, can we develop a mechanism such that it is in the self-interest of non-compliant agents to comply after all. 
+        </div>
+        <div class="authors">
+          <a class="author" href="fanyun-sun.github.io"> <strong>Fan-Yun Sun</strong></a>,
+          <a class="author" href="">Yen-Yu Chang</a>,
+          <a class="author" href="https://kristery.github.io/">Kris Wu</a>,
+          <a class="author" href="https://www.csie.ntu.edu.tw/~sdlin/">Shou-De Lin</a>
+
+        </div>
+        <div class="publish">
+          <span class="publisher">AAMAS 2019</span>
+          <span class="place">Montreal, QC</span>
+        </div>
+        <div class="tags">
+          [<a class="tag" href="https://arxiv.org/abs/1901.10059"> <strong>arXiv</strong> </a>]
+          [<a class="tag" href="https://drive.google.com/open?id=1jtjyK0uv31V39hzrRzXzsXdx5QxvmKV98b_NEw2fkh4"> <strong>slides</strong> </a>]
+        </div>
+      </div>
+    </div>
+    <div class="pub">
+      <div class="pub-left">
+        <img class="intro-img frame" src="/publications/diminishing.png">
+      </div>
+
+      <div class="pub-right">
+        <div class="title">
+          Designing Non-greedy Reinforcement Learning Agents with Diminishing Reward Shaping
+        </div>
+        <div class="desc">
+          This paper intends to address an issue in RL that when agents possessing varying capabilities. We introduce a simple method to train non-greedy agents with nearly no extra cost. Our model can achieve the following goals: non-homogeneous equality, only need local information, cost-effective, generalizable and configurable. 
+        </div>
+        <div class="authors">
+          <a class="author" href="fanyun-sun.github.io"> <strong>Fan-Yun Sun</strong></a>,
+          <a class="author" href="">Yen-Yu Chang</a>,
+          <a class="author" href="https://kristery.github.io/">Kris Wu</a>,
+          <a class="author" href="https://www.csie.ntu.edu.tw/~sdlin/">Shou-De Lin</a>
+
+        </div>
+        <div class="publish">
+          <span class="publisher">AIES 2018</span>
+          <span class="status">(Oral)</span>
+          <span class="place">New Orleans, Louisiana</span>
+        </div>
+        <div class="tags">
+          [<a class="tag" href="http://www.aies-conference.com/wp-content/papers/main/AIES_2018_paper_97.pdf"> <strong>pdf</strong> </a>]
+          [<a class="tag" href="https://docs.google.com/presentation/d/1WENgm81DSKxCf2jgXUSgLKWgeUfZSix7F7MDOKNLbUc/edit?usp=sharing"> <strong>slides</strong> </a>]
+        </div>
+      </div>
+    </div>
+    <div class="pub">
+      <div class="pub-left">
+        <img class="intro-img frame" src="/publications/memory.png">
+      </div>
+
+      <div class="pub-right">
+        <div class="title">
+          A Memory-Network Based Solution for Multivariate Time-Series Forecasting
+        </div>
+        <div class="desc">
+           Inspired by Memory Network proposed for solving the question-answering task, we propose a deep learning based model named Memory Time-series network (MTNet) for time series forecasting. Additionally, the attention mechanism designed enable MTNet to be interpretable.
+        </div>
+        <div class="authors">
+          <a class="author" href="">Yen-Yu Chang</a>,
+          <a class="author" href="fanyun-sun.github.io"> <strong>Fan-Yun Sun</strong></a>,
+          <a class="author" href="https://kristery.github.io/">Kris Wu</a>,
+          <a class="author" href="https://www.csie.ntu.edu.tw/~sdlin/">Shou-De Lin</a>
+
+        </div>
+        <div class="tags">
+          [<a class="tag" href="https://arxiv.org/abs/1809.02105"> <strong>arXiv</strong> </a>]
+        </div>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-left">
+        <img class="intro-img frame" src="/publications/ans.png">
+      </div>
+
+      <div class="pub-right">
+        <div class="title">
+          ANS: Adaptive Network Scaling for Deep Rectifier Reinforcement Learning Models
+        </div>
+        <div class="desc">
+          This work provides a thorough study on how reward scaling can affect performance of deep reinforcement learning agents. We also propose an Adaptive Network Scaling framework to find a suitable scale of the rewards during learning for better performance. We conducted empirical studies to justify the solution.
+        </div>
+        <div class="authors">
+          <a class="author" href="https://kristery.github.io/">Kris Wu</a>,
+          <a class="author" href="fanyun-sun.github.io"> <strong>Fan-Yun Sun</strong></a>,
+          <a class="author" href="">Yen-Yu Chang</a>,
+          <a class="author" href="https://www.csie.ntu.edu.tw/~sdlin/">Shou-De Lin</a>
+
+        </div>
+        <div class="tags">
+          [<a class="tag" href="https://arxiv.org/abs/1809.02112"> <strong>arXiv</strong> </a>]
+        </div>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="pub-left">
+        <img class="intro-img frame" src="/publications/oar.png">
+      </div>
+
+      <div class="pub-right">
+        <div class="title">
+          NPC-OAR: A Multi-modal Nasopharyngeal Carcinoma Dataset for Tumor and Organ At Risk Segmentation
+        </div>
+        <div class="desc">
+          Release a new Multi-model Nasopharyngeal Carcinoma Dataset for Tumor and Organ At Risk Segmentation. Explore fusion of unaligned CTand MR images.
+        </div>
+        <div class="authors">
+          <a class="author">Kuan-Lun Tseng</a>,
+          <a class="author" href="https://winstonhsu.info/">Winston Hsu</a>, 
+          <a class="author">Chun Ting Wu</a>, 
+          <a class="author">Ya-Fang Shih</a>,
+          <a class="author" href="fanyun-sun.github.io"> <strong>Fan-Yun Sun</strong></a>
+
+        </div>
+        <div class="publish">
+          <span class="publisher">In submission</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="button">
+    <h1 class="sm-heading text-center">
+    </h1>
+  </div>
+
+</div>
+
+<!--
+<div id="publications" class="publications">
+  <h1 class="md-heading text-center">
+    <i class="fa fa-file" aria-hidden="true"></i>
+    Publications
+  </h1>
+
 		<div class="bio">
 
 		<ul>
@@ -444,11 +621,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</div>
  
 </div>
+-->
 
 <div id="teaching" class="teaching">
   <h1 class="md-heading text-center">
     <i class="fa fa-globe" aria-hidden="true"></i>
-    Teaching & Talks
+    Teaching
   </h1>
 
   <div class="bio">
@@ -470,7 +648,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </tr>
 	  <tbody>
 	    <tr>
-	      <td scope="row">&nbsp Intro to deep learning and frameworks compared &nbsp </td>
+        <td scope="row"> <a class="tag" href="https://drive.google.com/open?id=1_iNpKCmdl5IeDv-nawgr20-m7y5aNq_1BQz-p1kAPZo">&nbsp Intro to deep learning and frameworks compared &nbsp</a></td>
 	      <td>&nbsp<a href="https://www.accupass.com/event/1709231517121640634533">Public Workshop - Microsoft</a>&nbsp</td>
 	      <td>&nbsp 2017.10 &nbsp</td>
 	    </tr>
@@ -570,6 +748,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <li>
       Presendential Award (2 times) / <strong>National Taiwan University</strong> / 2015 Fall, 2016 Spring
     </li>
+    <li>
       Best project award (out of 40+ groups) / <strong>Probability Course Final Project Contest</strong> / 2017
     </li>
     <li>
