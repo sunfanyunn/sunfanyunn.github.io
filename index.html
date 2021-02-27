@@ -16,15 +16,15 @@
   
   
 
-  <link rel="shortcut icon" href="/images/favicon.svg">
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="shortcut icon" href=".images/favicon.svg">
+  <link rel="stylesheet" href="css/main.css">
 
   <link rel="stylesheet" href="custom.css">
 
   <link rel="canonical" href="https://fanyun-sun.github.io/">
   <link rel="alternate" type="application/rss+xml" title="Fan-Yun Sun" href="https://fanyun-sun.github.io/feed.xml" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="/js/jquery-2.1.3.min.js"> </script>
+  <script src="js/jquery-2.1.3.min.js"> </script>
 
   <!--[if lt IE 9]>
 <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -114,117 +114,111 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
 </header>
 
-    <div id="profile-cover" class="cover shallow-bg img-responsive">
-  
-  <div id="profile-namecard" class="profile-wrapper wrapper-light">
-    <div id="my-pic" class="profile-col profile-col-1">
-      <img id="profile-avatar" src="/images/self-portrait/me.jpg" alt="Me" class="circle-img border-dark"-/>
-    </div>
-    <div id="my-contact" class="profile-col profile-col-2">
-      <div id="my-name" class="text-grey-dark">
-	Fan-Yun Sun<br>
+  <div id="profile-cover" class="cover shallow-bg img-responsive"> 
+    <div id="profile-namecard" class="profile-wrapper wrapper-light">
+      <div id="my-pic" class="profile-col profile-col-1">
+        <img id="profile-avatar" src="images/self-portrait/me.jpg" alt="Me" class="circle-img border-dark"-/>
       </div>
-      <div id="my-title" class="text-grey">
-        CS Phd student at Stanford
+      <div id="my-contact" class="profile-col profile-col-2">
+        <div id="my-name" class="text-grey-dark">
+          Fan-Yun Sun (Sun)<br>
+        </div>
+        <div id="my-title" class="text-grey">
+          CS Phd student at Stanford
+        </div>
+        <div id="my-email" class="text-grey-light">
+          sunfanyun [at] gmail.com
+        </div>
+        <div class="social-media">
+          <a href="https://scholar.google.com/citations?hl=en&user=TOw2RMMAAAAJ" class="icon-button github">
+            <i class="fa fa-graduation-cap icon-github"></i>
+            <span></span>
+          </a>
+
+          <a href="https://github.com/fanyun-sun" class="icon-button github">
+            <i class="fa fa-github icon-github"></i>
+            <span></span>
+          </a>
+
+          <!--
+          <a href="https://twitter.com/sunfanyun" class="icon-button twitter">
+            <i class="fa fa-twitter icon-twitter"></i>
+            <span></span>
+          </a>
+          -->
+
+          <!--
+          <a href="https://www.facebook.com/profile.php?id=100000746738382" class="icon-button facebook">
+            <i class="fa fa-facebook icon-facebook"></i>
+            <span></span>
+          </a>
+          -->
+
+          <a href="https://www.linkedin.com/in/sunfanyun/" class="icon-button linkedin">
+            <i class="fa fa-linkedin icon-linkedin"></i>
+            <span></span>
+          </a>
+
+          <a href="files/CV.pdf" class="icon-button">
+            <i class="fa">
+               <img class="social-icon" src="images/icon/cv-symbol.png"/>
+            </i>
+            <span></span>
+          </a>
+        </div>
       </div>
-      <div id="my-email" class="text-grey-light">
-        sunfanyun [at] gmail.com
+
+      <div id="my-desc" class="profile-col profile-col-2 hide">
+        <div id="my-desc-title">
+          Another me.
+        </div>
+        <div id="my-desc-content">
+          I love movies and sports, especially basketball and table tennis.</em>
+        </div>
       </div>
-      <div class="social-media">
-          
 
-
-<a href="https://scholar.google.com/citations?hl=en&user=TOw2RMMAAAAJ" class="icon-button github">
-  <i class="fa fa-graduation-cap icon-github"></i>
-  <span></span>
-</a>
-
-<a href="https://github.com/fanyun-sun" class="icon-button github">
-  <i class="fa fa-github icon-github"></i>
-  <span></span>
-</a>
-
-<!--
-<a href="https://twitter.com/sunfanyun" class="icon-button twitter">
-  <i class="fa fa-twitter icon-twitter"></i>
-  <span></span>
-</a>
--->
-
-<!--
-<a href="https://www.facebook.com/profile.php?id=100000746738382" class="icon-button facebook">
-  <i class="fa fa-facebook icon-facebook"></i>
-  <span></span>
-</a>
--->
-
-<a href="https://www.linkedin.com/in/sunfanyun/" class="icon-button linkedin">
-  <i class="fa fa-linkedin icon-linkedin"></i>
-  <span></span>
-</a>
-
-<a href="/files/CV.pdf" class="icon-button">
-	<i class="fa">
-	   <img class="social-icon" src="/images/icon/cv-symbol.png"/>
-  </i>
-  <span></span>
-</a>
-
-
-
-      </div>
-    </div>
-
-    <div id="my-desc" class="profile-col profile-col-2 hide">
-      <div id="my-desc-title">
-        Another me.
-      </div>
-      <div id="my-desc-content">
-        I love movies and sports, especially basketball and table tennis.</em>
-      </div>
     </div>
   </div>
-</div>
-<script type="text/javascript">
-  function deepFeature()
-  {
-	  $('#profile-avatar').attr('src', '/images/self-portrait/deep-me.jpg');
-    //$('#profile-avatar').removeClass('border-dark');
-    //$('#profile-avatar').addClass('border-bright');
+  <script type="text/javascript">
+    function deepFeature()
+    {
+      $('#profile-avatar').attr('src', 'images/self-portrait/deep-me.jpg');
+      //$('#profile-avatar').removeClass('border-dark');
+      //$('#profile-avatar').addClass('border-bright');
 
-    //$('#profile-cover').removeClass('shallow-bg');
-    //$('#profile-cover').addClass('deep-bg');
-    //
-    //$('#profile-namecard').removeClass('wrapper-light');
-    //$('#profile-namecard').addClass('wrapper-dark');
-    //
-    //$('#my-desc').removeClass('hide');
-    //$('#my-contact').addClass('hide');    
-    // console.log('Move in now...');
-  }
+      //$('#profile-cover').removeClass('shallow-bg');
+      //$('#profile-cover').addClass('deep-bg');
+      //
+      //$('#profile-namecard').removeClass('wrapper-light');
+      //$('#profile-namecard').addClass('wrapper-dark');
+      //
+      //$('#my-desc').removeClass('hide');
+      //$('#my-contact').addClass('hide');    
+      // console.log('Move in now...');
+    }
 
-  function shallowFeature()
-  {
-    $('#profile-avatar').attr('src', '/images/self-portrait/me.jpg');
-    $('#profile-avatar').removeClass('border-bright');
-    $('#profile-avatar').addClass('border-dark');
+    function shallowFeature()
+    {
+      $('#profile-avatar').attr('src', 'images/self-portrait/me.jpg');
+      $('#profile-avatar').removeClass('border-bright');
+      $('#profile-avatar').addClass('border-dark');
 
-    $('#profile-cover').removeClass('deep-bg');
-    $('#profile-cover').addClass('shallow-bg');
-    
-    $('#profile-namecard').removeClass('wrapper-dark');
-    $('#profile-namecard').addClass('wrapper-light');
-    
-    $('#my-contact').removeClass('hide');
-    $('#my-desc').addClass('hide');
-    // console.log('Move out now...');
-  }
+      $('#profile-cover').removeClass('deep-bg');
+      $('#profile-cover').addClass('shallow-bg');
+      
+      $('#profile-namecard').removeClass('wrapper-dark');
+      $('#profile-namecard').addClass('wrapper-light');
+      
+      $('#my-contact').removeClass('hide');
+      $('#my-desc').addClass('hide');
+      // console.log('Move out now...');
+    }
 
-  $(function() { 
-    $('#my-pic').hover(deepFeature, shallowFeature);
-  })
+    $(function() { 
+      $('#my-pic').hover(deepFeature, shallowFeature);
+    })
 
-</script>
+  </script>
 
     <div class="page-content">
       <div class="wrapper">
@@ -234,38 +228,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     Biography 
   </h1>
   <div class="bio-body" style="overflow:hidden;">
-	  <p> I am a  first year PhD student at CS Stanford. During my undergraduate, I worked with <a href='https://www.csie.ntu.edu.tw/~sdlin/'> Prof. Shou-De Lin</a> at <a href='http://www.ntu.edu.tw/english/index.html'>National Taiwan University</a>, <a href='https://jian-tang.com/'>Prof. Jian Tang</a> at <a href='https://mila.quebec/en/mila/'>MILA</a>, and <a href='https://cs.stanford.edu/~jure/'>Prof. Jure Leskovec</a> at Stanford. If you would like to learn more about me, please see my [ <a href="/files/CV.pdf"><strong>CV</strong></a> ] or contact me at sunfanyun [at] gmail.com.
+    <p> I am a first year PhD student at CS Stanford. During my undergraduate, I worked with <a href='https://www.csie.ntu.edu.tw/~sdlin/'> Prof. Shou-De Lin</a> and <a href='https://winstonhsu.info/'> Prof. Winston Hsu </a> at <a href='http://www.ntu.edu.tw/english/index.html'>NTU</a>, and <a href='https://jian-tang.com/'>Prof. Jian Tang</a> at <a href='https://mila.quebec/en/mila/'>MILA</a>. If you would like to learn more about me, please see my [ <a href="/files/CV.pdf"><strong>CV</strong></a> ] or contact me at sunfanyun [at] gmail.com. 
+    </p>
 
-    <div style="width: 50%; float:left">
+    <!--<div style="width: 50%; float:left">-->
+			<!--<h3>-->
+		<!--<i class="fa fa-star" aria-hidden="true"></i>-->
+		<!--<strong>Interests</strong>-->
+			<!--</h3>-->
 
-	    <h3>
-		<i class="fa fa-star" aria-hidden="true"></i>
-		<strong>Interests</strong>
-	    </h3>
-
-	 <ul>
-          
-          <li>Machine Learning / Deep Learning</li>
-          <li>Structure Learning / ML on Graphs </li>
-          <li>Reinforcement Learning / Multiagent Systems</li>
-          
-        </ul>
-   </div>
-    <div style="width: 40%; float:right">
-	    <h3>
-		    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-		    <strong>Education</strong>
-	    </h3>
-	    National Taiwan University (NTU)<br>
-	    B.S. in Computer Science, 2019
+       <!--<ul>-->
+          <!--<li>Machine Learning / Deep Learning</li>-->
+          <!--<li>Structure Learning / ML on Graphs </li>-->
+          <!--<li>Reinforcement Learning / Multiagent Systems</li>-->
+        <!--</ul>-->
+   <!--</div>-->
+    <!--<div style="width: 40%; float:right">-->
+			<!--<h3>-->
+				<!--<i class="fa fa-graduation-cap" aria-hidden="true"></i>-->
+				<!--<strong>Education</strong>-->
+			<!--</h3>-->
+			<!--National Taiwan University (NTU)<br>-->
+			<!--B.S. in Computer Science, 2019-->
 	    <!--<strong>Top 3% (GPA: 4.2/4.3, major GPA: 4.28/4.3)</strong>-->
-	    <ul>
-		    <li><strong>Overall Class Rank: 3 / 123</strong></li>
-		    <li>Overall GPA: 4.20 / 4.30</li>
-		    <li>CS Major GPA: 4.28 / 4.30</li>
-	    </ul>
-
-   </div>
+			<!--<ul>-->
+				<!--<li><strong>Overall Class Rank: 3 / 123</strong></li>-->
+				<!--<li>Overall GPA: 4.20 / 4.30</li>-->
+				<!--<li>CS Major GPA: 4.28 / 4.30</li>-->
+			<!--</ul>-->
+   <!--</div>-->
 
 
   </div>
@@ -283,14 +274,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
     <div class="timeline-item">
       <div class="timeline-date">
-        <img class="social-icon" src="/images/icon/stanford.png"/>
+        <img class="social-icon" src="images/icon/stanford.png"/>
         2020 Sep. -
       </div>
       <div class="timeline-title">
         CS Phd student @ Stanford
       </div>
       <div class="timeline-desc">
-	      2019 Summer visitor advised by <a href='https://cs.stanford.edu/~jure/'>Prof. Jure Leskovec</a>.
+        Rotated with <a href='https://neuroailab.stanford.edu/'>Prof. Dan Yamins</a>.<br>
+	      Rotated with <a href='https://cs.stanford.edu/~jure/'>Prof. Jure Leskovec</a>.
       </div>
       <div class="timeline-host">
 	<!--, <a href='https://sites.google.com/view/panli-uiuc/home?authuser=0'>Dr. Pan Li</a>, <a href='https://scholar.google.com/citations?user=xlZ4YJcAAAAJ&hl=en'>Dr. Rok Sosic</a>-->
@@ -299,7 +291,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
     <div class="timeline-item">
       <div class="timeline-date">
-        <img class="social-icon" src="/images/icon/mila.png"/>
+        <img class="social-icon" src="images/icon/mila.png"/>
         2019 Jan. - 2019 May
       </div>
       <div class="timeline-title">
@@ -317,7 +309,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <div class="timeline-item">
       <div class="timeline-date">
-        <img class="social-icon" src="/images/icon/appier.png"/>
+        <img class="social-icon" src="images/icon/appier.png"/>
         2018 Mar. - 2018 Sep.
       </div>
       <div class="timeline-title">
@@ -339,20 +331,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
     <div class="timeline-item">
       <div class="timeline-date">
-        <img class="social-icon" src="/images/icon/worldquant.png"/>
+        <img class="social-icon" src="images/icon/worldquant.png"/>
         2018 Jan. - 2018 Feb.
       </div>
       <div class="timeline-title">
    	Research intern @ WorldQuant
       </div>
       <div class="timeline-desc">
-	      Conduct quantitative research (finding alphas).<br> Gold level on <a href='https://www.worldquantvrc.com/en/cms/wqc/websim/'>Websim</a>.
+	      Conduct quantitative research (finding alphas).
       </div>
     </div>
 
     <div class="timeline-item">
       <div class="timeline-date">
-        <img class="social-icon" src="/images/icon/microsoft.png"/>
+        <img class="social-icon" src="images/icon/microsoft.png"/>
          2017 - 2018
       </div>
 
@@ -366,7 +358,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
     <div class="timeline-item">
       <div class="timeline-date">
-        <img class="social-icon" src="/images/icon/google.png"/>
+        <img class="social-icon" src="images/icon/google.png"/>
         2017 July - 2017 Aug.
       </div>
       <div class="timeline-title">
@@ -388,7 +380,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!--
     <div class="timeline-item">
       <div class="timeline-date">
-        <img class="social-icon" src="/images/icon/ucb.png"/>
+        <img class="social-icon" src="images/icon/ucb.png"/>
         2016 Summer
       </div>
       <div class="timeline-title">
@@ -403,7 +395,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
     <div class="timeline-item">
       <div class="timeline-date">
-        <img class="social-icon" src="/images/icon/ntu.png"/>
+        <img class="social-icon" src="images/icon/ntu.png"/>
         2015 - 2019
       </div>
       <div class="timeline-title">
@@ -458,7 +450,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	  
     <div class="pub">
       <div class="pub-left">
-        <img class="intro-img frame" src="/publications/infograph.png">
+        <img class="intro-img frame" src="publications/infograph.png">
       </div>
 
       <div class="pub-right">
@@ -489,7 +481,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <div class="pub">
       <div class="pub-left">
-        <img class="intro-img frame" src="/publications/vgraph.png">
+        <img class="intro-img frame" src="publications/vgraph.png">
       </div>
 
       <div class="pub-right">
@@ -521,7 +513,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <div class="pub">
       <div class="pub-left">
-        <img class="intro-img frame" src="/publications/regulation.png">
+        <img class="intro-img frame" src="publications/regulation.png">
       </div>
 
       <div class="pub-right">
@@ -550,7 +542,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
     <div class="pub">
       <div class="pub-left">
-        <img class="intro-img frame" src="/publications/diminishing.png">
+        <img class="intro-img frame" src="publications/diminishing.png">
       </div>
 
       <div class="pub-right">
@@ -582,7 +574,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
     <div class="pub">
       <div class="pub-left">
-        <img class="intro-img frame" src="/publications/memory.png">
+        <img class="intro-img frame" src="publications/memory.png">
       </div>
 
       <div class="pub-right">
@@ -607,7 +599,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <div class="pub">
       <div class="pub-left">
-        <img class="intro-img frame" src="/publications/ans.png">
+        <img class="intro-img frame" src="publications/ans.png">
       </div>
 
       <div class="pub-right">
@@ -632,7 +624,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <div class="pub">
       <div class="pub-left">
-        <img class="intro-img frame" src="/publications/oar.png">
+        <img class="intro-img frame" src="publications/oar.png">
       </div>
 
       <div class="pub-right">
@@ -805,18 +797,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <li>
       Top 12 (out of 149) / <strong>Formosa Speech Grand Challenge - Talk to AI (Warm-Up)</strong> / 2017 [<a class="tag" href="https://github.com/fanyun-sun/Formosa-Grand-Challenge"> <strong>code</strong> </a>]
     </li>
-    <li>
-      Travel Grant for NeurIPS 2019 / <strong>Appier</strong> / 2019
-    </li>
-    <li>
-      Publication Grant for AAMAS 2019 / <strong>National Taiwan University (<a href="https://www.csie.ntu.edu.tw/~sdlin/">MSLAB</a>)</strong> / 2019
-    </li>
-    <li>
-      Travel Grant for AIES 2018 / <strong>National Taiwan University (<a href="https://www.csie.ntu.edu.tw/~sdlin/">MSLAB</a>)</strong> / 2018
-    </li>
-    <li>
-      ML Research Project Grant / <strong>Institute for Information Industry of Taiwan</strong> / 2018
-    </li>
+    <!--<li>-->
+      <!--Travel Grant for NeurIPS 2019 / <strong>Appier</strong> / 2019-->
+    <!--</li>-->
+    <!--<li>-->
+      <!--Publication Grant for AAMAS 2019 / <strong>National Taiwan University (<a href="https://www.csie.ntu.edu.tw/~sdlin/">MSLAB</a>)</strong> / 2019-->
+    <!--</li>-->
+    <!--<li>-->
+      <!--Travel Grant for AIES 2018 / <strong>National Taiwan University (<a href="https://www.csie.ntu.edu.tw/~sdlin/">MSLAB</a>)</strong> / 2018-->
+    <!--</li>-->
+    <!--<li>-->
+      <!--ML Research Project Grant / <strong>Institute for Information Industry of Taiwan</strong> / 2018-->
+    <!--</li>-->
 
     </ul>
 
@@ -845,14 +837,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       Microsoft Student Partner of the year / <strong>Microsoft</strong> / 2018
     </li>
     <li>
-      Presendential Award (2 times) / <strong>National Taiwan University</strong> / 2015 Fall, 2016 Spring
+      Presendential Award / <strong>National Taiwan University</strong> / 2015 Fall, 2016 Spring
     </li>
-    <li>
-      Best project award (out of 40+ groups) / <strong>Probability Course Final Project Contest</strong> / 2017
-    </li>
-    <li>
-      3rd place (out of 280+ students) / <strong>Data Structure and Algorithm Final Project</strong> / 2016 [<a class="tag" href="https://github.com/fanyun-sun/DSA/tree/master/project"> <strong>code</strong> </a>]
-    </li>
+    <!--<li>-->
+      <!--Best project award (out of 40+ groups) / <strong>Probability Course Final Project Contest</strong> / 2017-->
+    <!--</li>-->
+    <!--<li>-->
+      <!--3rd place (out of 280+ students) / <strong>Data Structure and Algorithm Final Project</strong> / 2016 [<a class="tag" href="https://github.com/fanyun-sun/DSA/tree/master/project"> <strong>code</strong> </a>]-->
+    <!--</li>-->
     <li>
 	    Finalist (Top 30) / <strong>International Physics Olympiad Domestic Final</strong> / 2014 
     </li>
@@ -872,7 +864,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <div class="pub">
       <div class="pub-left">
-        <img class="intro-img frame" src="/projects/gitgraph/gitgraph.png">
+        <img class="intro-img frame" src="projects/gitgraph/gitgraph.png">
       </div>
 
       <div class="pub-right">
@@ -888,14 +880,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <a class="author" href="https://winstonhsu.info/">Winston Hsu</a>
         </div>
         <div class="tags">
-          [<a class="tag" href="/projects/gitgraph/gitgraph.pdf"> <strong>pdf</strong> </a>]
+          [<a class="tag" href="projects/gitgraph/gitgraph.pdf"> <strong>pdf</strong> </a>]
         </div>
       </div>
     </div>
 
     <div class="pub">
       <div class="pub-left">
-        <img class="intro-img frame" src="/projects/tvbot/tvbot.png">
+        <img class="intro-img frame" src="projects/tvbot/tvbot.png">
       </div>
 
       <div class="pub-right">
@@ -907,14 +899,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
         <div class="tags">
           [<a class="tag" href="https://yvchen.github.io/TVBot/"> <strong>project website</strong> </a>]
-          [<a class="tag" href="/projects/tvbot/poster.pdf"> <strong>poster</strong> </a>]
+          [<a class="tag" href="projects/tvbot/poster.pdf"> <strong>poster</strong> </a>]
         </div>
       </div>
     </div>
 
     <div class="pub">
       <div class="pub-left">
-        <img class="intro-img frame" src="/projects/formosa/smn.png">
+        <img class="intro-img frame" src="projects/formosa/smn.png">
       </div>
 
       <div class="pub-right">
@@ -937,7 +929,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <div class="pub">
       <div class="pub-left">
-        <img class="intro-img frame" src="/projects/covim/covim.gif">
+        <img class="intro-img frame" src="projects/covim/covim.gif">
       </div>
 
       <div class="pub-right">
@@ -948,9 +940,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           Enhanced <a href="https://github.com/FredKSchott/CoVim">CoVim</a> by eliminating the need of public IPs or a central server(utilize TCP Hole Punching).
         </div>
         <div class="tags">
-          [<a class="tag" href="/projects/covim/proposal.pdf"> <strong>proposal</strong> </a>]
-          [<a class="tag" href="/projects/covim/report.pdf"> <strong>report</strong> </a>]
-          [<a class="tag" href="/projects/covim/demo.mp4"> <strong>demo</strong> </a>]
+          [<a class="tag" href="projects/covim/proposal.pdf"> <strong>proposal</strong> </a>]
+          [<a class="tag" href="projects/covim/report.pdf"> <strong>report</strong> </a>]
+          [<a class="tag" href="projects/covim/demo.mp4"> <strong>demo</strong> </a>]
           [<a class="tag" href="https://github.com/fanyun-sun/CoVim"> <strong>code</strong> </a>]
         </div>
       </div>
@@ -958,7 +950,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <div class="pub">
       <div class="pub-left">
-        <img class="intro-img frame" src="/projects/e-monitor/e-monitor.png">
+        <img class="intro-img frame" src="projects/e-monitor/e-monitor.png">
       </div>
 
       <div class="pub-right">
@@ -980,7 +972,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!--
     <div class="pub">
       <div class="pub-left">
-        <img class="intro-img frame" src="/projects/pike/pike.png">
+        <img class="intro-img frame" src="projects/pike/pike.png">
       </div>
 
       <div class="pub-right">
@@ -1038,19 +1030,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       <div class="footer-col  footer-col-2">
 <a href="https://www.linkedin.com/in/sunfanyun">
-  <img src="/images/icon/color-linkedin.png" class="social-icon">
+  <img src="images/icon/color-linkedin.png" class="social-icon">
 </a>
 <a href="https://github.com/fanyun-sun">
-  <img src="/images/icon/color-github.png" class="social-icon">
+  <img src="images/icon/color-github.png" class="social-icon">
 </a>
 <!--
 <a href="https://twitter.com/sunfanyun">
-  <img src="/images/icon/color-twitter.png" class="social-icon">
+  <img src="images/icon/color-twitter.png" class="social-icon">
 </a>
 -->
 <!--
 <a href="https://www.facebook.com/profile.php?id=100000746738382">
-  <img src="/images/icon/color-facebook.png" class="social-icon">
+  <img src="images/icon/color-facebook.png" class="social-icon">
 </a>
 -->
       </div>
