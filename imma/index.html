@@ -1,0 +1,482 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+
+
+        <meta name="description" content="Project website for Unsupervised Discovery of Object Radiance Fields, Neurips 2022">
+        <meta name="author" content="Fan-Yun Sun">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="icon" href="../img/icon.png">
+
+        <title>IMMA</title>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+    </head>
+
+    <style>
+        a {
+            color: #B1040E;
+        }
+
+        a:hover {
+            color: #820000;
+            text-decoration: underline;
+        }
+
+        .body_text {
+            color: rgb(46,45,41);
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+            line-height: 1.9rem;
+            font-size: 1.1rem;
+        }
+
+        .text_title {
+            color: rgb(46,45,41);
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 500;
+            line-height: 3rem;
+            font-size: 2.2rem;
+        }
+
+        .text_venue {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 500;
+            line-height: 2.0rem;
+            font-size: 1.5rem;
+            color: rgb(77, 79, 83);
+        }
+
+        .text_author {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            line-height: 1.5rem;
+            font-size: 1.2rem;
+            color: rgb(77, 79, 83);
+        }
+
+        .text_resource {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            line-height: 1.5rem;
+            font-size: 1.0rem;
+            color: rgb(77, 79, 83);
+        }
+
+        .text_header {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            line-height: 2.5rem;
+            font-size: 2.0rem;
+            margin-top: 0.4rem;
+            color: rgb(140, 21, 21);
+        }
+
+        .figure_caption {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            line-height: 1.8rem;
+            font-size: 1.2rem;
+            color: rgb(77, 79, 83);
+            text-align: center;
+        }
+
+        .text_reference {
+            font-family: 'Open Sans', sans-serif;
+            text-align: left;
+            font-size: 0.7em;
+            color: rgb(77, 79, 83);
+        }
+
+        .text_ack {
+            font-family: 'Open Sans', sans-serif;
+            text-align: center;
+            font-size: 0.7em;
+            color: rgb(140, 21, 21);
+        }
+
+        .teaser_grid {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: 1fr;
+            gap: 0 0;
+            justify-content: center;
+            grid-auto-flow: row;
+        }
+
+        .teaser_fig {
+            max-width: 99%;
+        }
+
+        .icons {
+            height: 3.5em;
+        }
+
+
+        .big_figure {
+            max-width: 100%;
+            display: block;
+            margin: 1em auto 1em;
+        }
+
+        .median_figure {
+            max-width: 75%;
+            display: block;
+            margin: 1em auto 1em;
+        }
+
+        .color_switch {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .teaser_item {
+            text-align: center;
+        }
+
+    </style>
+
+  <style>
+    .teaser {
+              display: grid;
+              grid-template-columns: 100%;
+              grid-template-rows: 1fr;
+              gap: 0px 0px;
+              justify-content: center;
+              grid-auto-flow: row;
+              max-width: 100%;
+            }
+    .teaser_fig {
+      max-width: 100%;
+      min-width: 100%;
+    }
+    .teaser_item {
+      text-align: center;
+      max-width: 97%;
+    }
+
+    .seg3d {
+              display: grid;
+              grid-template-columns: 6.25% repeat(6, 15.625%);
+              grid-template-rows: 1fr 1fr;
+              gap: 8px 0px;
+              justify-content: center;
+              grid-auto-flow: row;
+            }
+    .seg3d_text {
+      text-align: center;
+      align-self: center;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        line-height: 1.8rem;
+        font-size: 1.2rem;
+        color: rgb(77, 79, 83);
+    }
+    .seg3d_item {
+      text-align: center;
+      align-self: center;
+      max-width: 97%;
+    }
+    .seg3d_fig {
+      max-width: 100%;
+      min-width: 100%;
+    }
+
+    .bball {
+              display: grid;
+              grid-template-columns: 50% 50%;
+              grid-template-rows: 1fr 1fr;
+              gap: 8px 0px;
+              justify-content: center;
+              grid-auto-flow: row;
+            }
+    .bball_item {
+      text-align: center;
+      align-self: center;
+      max-width: 97%;
+    }
+    .bball_fig {
+      max-width: 100%;
+      min-width: 100%;
+    }
+
+    .phase {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-auto-flow: row;
+    }
+    .phase_item {
+      text-align: center;
+      align-self: center;
+      max-width: 97%;
+    }
+    .phase_fig {
+      max-width: 100%;
+      min-width: 100%;
+    }
+  </style>
+
+<body>
+    <section>
+        <div class="container">
+        <div class="row" id="title">
+            <p class="col text-center mt-4 text_title">
+              Interaction Modeling with Multiplex Attention
+            </p>
+        </div>
+
+        <div class="row" id="venue">
+            <p class="col text-center text_venue">
+                NeurIPs 2022
+            </p>
+        </div>
+
+        <div class="row" id="authors">
+            <div class="col-md-12 text-center mt-2 text_author">
+                <ul class="list-inline">
+                    <li class="list-inline-item mx-4">
+                        <a href="https://fanyun-sun.github.io/">
+                            <p>Fan-Yun Sun</p>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mx-4">
+                        <a href="https://ikauvar.github.io/">
+                            <p>Isaac Kauvar</p>
+                        </a>
+                    </li>
+                    </li>
+                    <li class="list-inline-item mx-4">
+                        <a href="https://ai.stanford.edu/~zharu/">
+                            <p>Ruohan Zhang</p>
+                        </a>
+                    </li>
+                    </li>
+                    <li class="list-inline-item mx-4">
+                        <a href="https://jiachenli94.github.io/">
+                            <p>Jiachen Li</p>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mx-4">
+                        <a href="https://mykel.kochenderfer.com/">
+                            <p>Mykel Kochenderfer</p>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mx-4">
+                        <a href="https://jiajunwu.com/">
+                            <p>Jiajun Wu</p>
+                        </a>
+                    </li>
+                    <li class="list-inline-item mx-4">
+                        <a href="https://ed.stanford.edu/faculty/nhaber">
+                            <p>Nick Haber</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="list-inline" style="margin-top: -1rem">
+                    <li class="list-inline-item mx-4">
+                        <p>Stanford University</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row" id="resources">
+                <div class="col text-center text_resource">
+                    <ul class="list-inline">
+                        <li class="list-inline-item mx-4">
+                            <a href="https://arxiv.org/abs/2208.10660.pdf">
+                            <img src="./img/paper_icon.png" class="icons">
+                                <p>Paper</p>
+                            </a>
+                        </li>
+                        <li class="list-inline-item mx-4">
+                            <a href="https://github.com/fanyun-sun/IMMA">
+                            <img src="./img/github_icon.png" class="icons">
+                                <p>Code</p>
+                            </a>
+                        </li>
+
+
+
+
+
+
+                        <li>
+                    </ul>
+                </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="color_switch">
+        <div class="container">
+        <div class="row">
+            <div class="col my-3">
+                <div class="teaser">
+                    <img src="img/figure1.png" class="teaser_fig">
+                  <div class="figure_caption"> Multi-agent systems are often guided by a variety of interactions. </div>
+                </div>
+                <p class="text_header">
+                    Abstract
+                </p>
+                <p class="body_text mt-4">
+                  Modeling multi-agent systems requires understanding how agents interact. Such systems are often difficult to model because they can involve a variety of types of interactions that layer together to drive rich social behavioral dynamics. Here we introduce a method for accurately modeling multi-agent systems. We present Interaction Modeling with Multiplex Attention (IMMA), a forward prediction model that uses a multiplex latent graph to represent multiple independent types of interactions and attention to account for relations of different strengths. We also introduce Progressive Layer Training, a training strategy for this architecture. We show that our approach outperforms state-of-the-art models in trajectory forecasting and relation inference, spanning three multi-agent scenarios: social navigation, cooperative task achievement, and team sports. We further demonstrate that our approach can improve zero-shot generalization and allows us to probe how different interactions impact agent behavior.
+                </p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!--
+    <section>
+        <div class="container">
+        <div class="row">
+            <div class="col my-3">
+                <p class="text_header">
+                    Video
+                </p>
+                <div class="text-center mb-4">
+                    <div style="position:relative;padding-top:56.25%;">
+                        <iframe src="https://www.youtube.com/embed/6J9OpvT4dCA" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    -->
+
+    <section class="color_switch">
+        <div class="container">
+        <div class="row">
+              <div class="col my-3">
+                <div class="teaser">
+                    <img src="img/figure2.png" class="teaser_fig">
+                  <div class="figure_caption"> Architecture of IMMA.</div>
+                </div>
+              </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="color_switch">
+        <div class="container">
+        <div class="row">
+              <div class="col my-3">
+                <p class="text_header my-4">
+                  Social Navigation Environment
+                </p>
+                <div class="teaser">
+                    <img src="img/figure3.png" class="teaser_fig">
+                  <div class="figure_caption">Visualization of the latent graph and agent trajectories of the Social Navigation Environment. The leftmost column shows ground truth trajectories and the ground truth graph used to simulate those trajectories. The red agent's relational prediction is inaccurate with RFM---in the row highlighted by the arrow, the green agent is incorrectly given higher weight than the blue agent---and thus the predicted trajectories deviate from the ground truth, especially on long-horizon predictions.</div>
+                </div>
+              </div>
+        </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col my-3">
+                <p class="text_header my-4">
+                  The NBA Dataset
+                </p>
+
+                <div class="bball">
+
+                  <div class="bball_item">
+                    <img src="bball_img/rfm_1.png" class="bball_fig">
+                  </div>
+                  <div class="bball_item">
+                    <img src="bball_img/ours_1.png" class="bball_fig">
+                  </div>
+                  <div class="bball_item">
+                    <img src="bball_img/rfm_5.png" class="bball_fig">
+                  </div>
+                  <div class="bball_item">
+                    <img src="bball_img/ours_5.png" class="bball_fig">
+                  </div>
+                  <div class="seg3d_text">
+                    <p class="figure_text">RFM</p>
+                  </div>
+                  <div class="seg3d_text">
+                    <p class="figure_text">IMMA (ours)</p>
+                  </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col my-3">
+                <p class="text_header my-4">
+                  PHASE Dataset
+                </p>
+
+                <div class="phase">
+
+                  <div class="phase_item">
+                    <img src="phase_img/1-mlp.png" class="phase_fig">
+                  </div>
+                  <div class="phase_item">
+                    <img src="phase_img/1-rfm.png" class="phase_fig">
+                  </div>
+                  <div class="phase_item">
+                    <img src="phase_img/1-ours.png" class="phase_fig">
+                  </div>
+                  <div class="phase_item">
+                    <img src="phase_img/2-mlp.png" class="phase_fig">
+                  </div>
+                  <div class="phase_item">
+                    <img src="phase_img/2-rfm.png" class="phase_fig">
+                  </div>
+                  <div class="phase_item">
+                    <img src="phase_img/2-ours.png" class="phase_fig">
+                  </div>
+                  <div class="phase_item">
+                    <img src="phase_img/7-mlp.png" class="phase_fig">
+                  </div>
+                  <div class="phase_item">
+                    <img src="phase_img/7-rfm.png" class="phase_fig">
+                  </div>
+                  <div class="phase_item">
+                    <img src="phase_img/7-ours.png" class="phase_fig">
+                  </div>
+                  <div class="seg3d_text">
+                    <p class="figure_text">MLP</p>
+                  </div>
+                  <div class="seg3d_text">
+                    <p class="figure_text">RFM</p>
+                  </div>
+                  <div class="seg3d_text">
+                    <p class="figure_text">IMMA (ours)</p>
+                  </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <div class="row" id="ack">
+            <p class="col text_ack my-3">
+                Please send any question to Fan-Yun Sun.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
