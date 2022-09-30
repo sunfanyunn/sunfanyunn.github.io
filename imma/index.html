@@ -328,13 +328,13 @@
             <div class="col my-3">
                 <div class="teaser">
                     <img src="img/figure1.png" class="teaser_fig">
-                  <div class="figure_caption"> Multi-agent systems are often guided by a variety of interactions. </div>
+                  <div class="figure_caption"> Multi-agent systems are often guided by a variety of interactions. In this work, we propose a forecasting model for multi-agent systems that infers high-level abstractions in the form of graphs, entirely through the task of predicting agent trajectories. </div>
                 </div>
                 <p class="text_header">
                   Overview
                 </p>
                 <p class="body_text mt-4">
-                  Modeling multi-agent systems requires understanding how agents interact. Such systems are often difficult to model because they can involve a variety of types of interactions that layer together to drive rich social behavioral dynamics. Leading approaches in modeling multi-agent systems use use graph neural networks (GNNs) to infer edge types for every pair of entities in the interacting systems. However, <mark>GNNs does not explicitly handle the multiple layers of interactions present in social multi-agent systems</mark> and, as shown empirically, has led to at least two shortcomings: reduced performance on long-term predictions and decreased interpretability.
+                  Modeling multi-agent systems requires understanding how agents interact. Such systems are often difficult to model because they can involve a variety of types of interactions that layer together to drive rich social behavioral dynamics. Leading approaches in modeling multi-agent systems use use graph neural networks (GNNs) to infer edge types for every pair of entities in the interacting systems. However, <mark>GNNs do not explicitly handle the multiple layers of interactions present in social multi-agent systems</mark> and, as shown empirically, has led to at least two shortcomings: reduced performance on long-term predictions and decreased interpretability.
 
 
                 </p>
@@ -377,7 +377,7 @@
                       <li><b>attention</b> to account for relations of different strengths</li>
                     </ul>
                     We also <b>introduce Progressive Layer Training (PLT)</b>,  a strategy of learning a set of good graph bases by learning the high-level and most consequential interactions first and
-                    then progressively growing the network to model lower-level and more intricate interactions. <b>PLT decreases the information dependency</b> between latent graph layers and does not suffer from decreased forecasting accuracy caused by adding a disentanglement loss.
+                    then progressively growing the network to model lower-level and more intricate interactions. <b>PLT decreases the information dependency between latent graph layers</b> and does not suffer from decreased forecasting accuracy caused by adding a disentanglement loss.
                   </div>
                 </div>
               </div>
