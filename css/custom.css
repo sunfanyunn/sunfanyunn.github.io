@@ -4,3 +4,6 @@
 .grey-hl{
   color: #696969;
 }
+.author:hover {
+    text-decoration: none; /* Ensure no underline on hover */
+}
